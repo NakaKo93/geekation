@@ -10,4 +10,4 @@ $choco = 100;
 $candy = 50;
 
 $sum = ($choco * 1) + ($candy * 3);
-echo $sum;
+echo $sum."円です。";
