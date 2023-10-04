@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    background-color: #FFEFD5;
+}
+
+.text-toggler{
+    background-color: #FFC7AF;
+    cursor: pointer;
+}
+
+.text-display{
+    display: none;
+}
+
+.img-slide{
+    width: 100%;
+    aspect-ratio: 2;
+    object-fit: cover;
+}
+
+.img-fit{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.img-store{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.FadeInTrigger{
+    opacity: 0;
+}
+
+.FadeIn{
+    animation-name: fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(10px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
