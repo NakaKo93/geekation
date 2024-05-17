@@ -275,7 +275,7 @@
                         @foreach ($chatsList as $chat)
                             @if($chat['from_vet'])
                                 <div class="flex-vert-e W-90 my-1">
-                                    <div class="message-box-e ps-2 pe-2 py-1 bg-menu-vet-2">
+                                    <div class="message-box-e ps-3 pe-1 py-2 bg-menu-vet-2">
                                         <p class="txt-white">{{ $chat->message  ?? 'メッセージを取得できませんでした'}}</p>
                                     </div>
                                     <div class="flex-bes txt-gray fs-7">
@@ -284,7 +284,7 @@
                                 </div>
                             @else
                                 <div class="flex-vert-s W-90 my-1">
-                                    <div class="message-box-s ps-2 pe-1 py-2 bg-menu-user-2">
+                                    <div class="message-box-s ps-3 pe-1 py-2 bg-menu-user-2">
                                         <p class="txt-white">{{ $chat->message  ?? 'メッセージを取得できませんでした'}}</p>
                                     </div>
                                     <div class="flex-bes txt-gray fs-7">
