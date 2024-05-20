@@ -1,0 +1,680 @@
+:root {
+    --color-usr-M: #65914E;
+    --color-usr-S: #577D43;
+    --color-vet-M: #5279C1;
+    --color-vet-S: #5973A4;
+    --color-accent-M: #C15279;
+    --color-accent-S: #A85B76;
+    --color-gray-1: #515151;
+    --color-gray-2: #B3B3B3;
+    --color-gray-3: #EEEEEE;
+    --color-error: #D22000;
+    --color-rectangle: #CECECE;
+    --color-bg-0: #FFFFFF;
+    --color-bg-1: #FDF9F0;
+    --color-bg-2: #FAF1DB;
+    --color-user-bg-1: #B6D1A9;
+    --color-user-bg-2: #7FAD66;
+    --color-user-bg-3: #65914E;
+    --color-vet-bg-1: #BBCAE7;
+    --color-vet-bg-2: #5279C1;
+    --color-vet-bg-3: #3B60A5;
+  }
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-main {
+    background-color: var(--color-bg-1)
+}
+
+.bg-main-2 {
+    background-color: white
+}
+
+.bg-home-t {
+    background-color: var(--color-bg-2)
+}
+
+.bg-home-b {
+    background-color: var(--color-bg-3)
+}
+
+.bg-header-1 {
+    background-color: var(--color-bg-3)
+}
+
+.bg-header-2 {
+    background-color: var(--color-bg-4)
+}
+
+/*　ユーザー　*/
+.btn-user {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-usr-M);
+    color: white;
+}
+
+.btn-user-action {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 180px;
+    border: 0px;
+    background-color: var(--color-usr-M);
+    color: white;
+}
+
+.btn-user-action:hover {
+    box-shadow: inset 0 0 0 2px var(--color-usr-S);
+    background-color: transparent;
+    color: var(--color-usr-S);
+}
+
+.input_user_field {
+    background-color: transparent;
+    outline:0px;
+    border: 0px;
+    border-bottom: 2px solid var(--color-usr-S);
+}
+
+.input_user_field:invalid {
+    background-color: transparent;
+    outline:0px;
+    border: 0px;
+    border-bottom: 2px solid var(--color-error);
+}
+ 
+.input_user_field:focus,
+.input_user_field:valid {
+    background-color: transparent;
+    outline:0px;
+    border: 0px;
+    border-bottom: 2px solid var(--color-usr-S);
+}
+
+/*　獣医師　*/
+.btn-vet-action {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 180px;
+    border: 0px;
+    background-color: var(--color-vet-M);
+    color: white;
+}
+
+.btn-vet-action:hover {
+    box-shadow: inset 0 0 0 2px var(--color-vet-S);
+    background-color: transparent;
+    color: var(--color-vet-S);
+}
+
+.input_vet_field {
+    background-color: transparent;
+    outline:0px;
+    border: 0px;
+    border-bottom: 2px solid var(--color-vet-S);
+}
+
+.input_vet_field:invalid {
+    background-color: transparent;
+    outline:0px;
+    border: 0px;
+    border-bottom: 2px solid var(--color-error);
+}
+ 
+.input_vet_field:focus,
+.input_vet_field:valid {
+    background-color: transparent;
+    outline:0px;
+    border: 0px;
+    border-bottom: 2px solid var(--color-vet-S);
+}
+
+/*　アクセント　*/
+.btn-accent-action {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 180px;
+    border: 0px;
+    background-color: var(--color-accent-M);
+    color: white;
+}
+
+.btn-accent-action:hover {
+    box-shadow: inset 0 0 0 2px var(--color-accent-S);
+    background-color: transparent;
+    color: var(--color-accent-S);
+}
+
+/*　トップ　*/
+.vet-top-link {
+    color: var(--color-gray-1);
+    text-decoration: underline;
+}
+
+.vet-top-link:hover {
+    color: var(--color-gray-1);
+    text-decoration: none;
+}
+
+.top-txt-height {
+    line-height: 1.2;
+}
+
+.top-min-height{
+    min-height: 500px;
+}
+
+/*　文字　*/
+span {
+    display: inline-block;
+}
+
+.no-line {
+    white-space: nowrap;
+}
+
+.fs-7 {
+    font-size: 0.75rem !important;
+}
+
+.content-space{
+    padding-top: 2rem;
+}
+
+/*　自動入力　*/
+@keyframes onAutoFillStart { from {} to {}}
+
+input:-webkit-autofill {
+    color: var(--color-gray-1);
+    animation-name: onAutoFillStart;
+    transition: background-color 50000s ease-in-out 0s;
+    font-size: 1.25rem !important;
+}
+
+/*　その他　*/
+.upload-button {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-button i {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pb-2px{
+    padding-bottom: 2px;
+}
+
+.header-menu {
+    position: fixed;
+    height: 100vh;
+}
+
+.chat-menu {
+    position: fixed;
+    height: 100vh;
+    right: 0px;
+}
+
+.circle {
+    width: 35%;
+    height: 0px;
+    padding-top: 35%;
+    border-radius: 50%;
+}
+
+/* Flexboxの設定 */
+.flex-vert {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.flex-bes {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-vert-s {
+    align-self: flex-start;
+}
+
+.flex-vert-e {
+    align-self: flex-end;
+}
+
+.flex-vert-bottom {
+    justify-content: flex-end;
+}
+
+.flex-grow {
+    flex-grow: 1
+}
+
+/* トップ画面 */
+/* メイン部分の設定 */
+.top-main-box {
+    width: 60vw;
+    height: 100vh;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .top-main-box {
+        width: 100vw;
+        height: 500px;
+    }
+}
+
+/* メイン画像の設定 */
+.top-pic-box {
+    width: 40vw;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .top-pic-box {
+        display: none;
+    }
+}
+
+/* ホーム画面 */
+/* メイン部分の設定 */
+.home-main-box {
+    position: relative;
+    left: 20vw;
+    width: 60vw;
+    padding: 20px;
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .home-main-box {
+        left: 35vw;
+        width: 65vw;
+    }
+}
+
+.home-circle {
+    width: 30%;
+    height: 0px;
+    padding-top: 30%;
+    border-radius: 50%;
+}
+
+.home-pet-info-box {
+    width: 70%;
+    margin-left: 20px;
+}
+
+/* メッセージ部分の設定 */
+.message-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .message-box {
+        display: none;
+    }
+}
+
+.message-deco {
+    height: 100vh;
+    border-radius: 20px 0 0 20px;
+}
+
+.message-box-s {
+    border-radius: 20px 20px 20px 0;
+}
+
+.message-box-e {
+    border-radius: 20px 20px 0 20px;
+}
+
+.message-form-deco {
+    border-radius: 0 0 0 20px;
+}
+
+.message-form-inp,
+.message-form-inp:focus,
+.message-form-inp:valid,
+.message-form-inp:invalid {
+    outline:0px;
+    border: 0px;
+    height: 30px;
+    background-color: white;
+}
+
+.message-form-icon,
+.message-form-icon:hover {
+    text-align: center;
+    text-decoration: none;
+    border: 0px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    color: var(--color-usr-S);
+}
+
+/* その他のページ */
+/* メニュー部分の設定 */
+/* ログイン前 */
+.pre-menu-box {
+    position: fixed;
+    left: 0;
+    width: 5vw;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .pre-menu-box {
+        width: 30px;
+    }
+}
+
+/* ログイン後 */
+.menu-box {
+    position: fixed;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .menu-box {
+        width: 35vw;
+    }
+}
+
+/* 配置 */
+.menu-user-section {
+    margin-right: 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+.menu-selected {
+    border-radius: 0 20px 20px 0;
+    z-index: 100;
+}
+
+.menu-circle {
+    width: 30%;
+    height: 0px;
+    padding-top: 30%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.menu-info {
+    position: relative;
+    width: 70%;
+    padding-left: 15px;
+    margin-block: auto;
+}
+
+.me-30px {
+    margin-right: 30px;
+}
+
+.pe-20px {
+    padding-right: 20px;
+}
+
+.deco {
+    position: absolute;
+    right: -10px;
+    width: 30px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+/* メイン部分の設定 */
+/* ログイン前 */
+.pre-main-box {
+    position: relative;
+    left: 5vw;
+    width: 50vw;
+    height: 100vh;
+    padding: 20px;
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .pre-main-box {
+        left: 30px;
+        width: auto;
+    }
+}
+
+/* ログイン後 */
+.main-box {
+    position: relative;
+    left: 20vw;
+    width: 50vw;
+    height: 100vh;
+    padding: 20px;
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .main-box {
+        left: 35vw;
+        width: 65vw;
+    }
+}
+
+.m-middle{
+    margin-block: 20px;
+}
+
+.radius-caontent {
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 15px;
+}
+
+/* 画像部分の設定 */
+/* ログイン前 */
+.pre-pic-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45vw;  
+    height: 100vh;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .pre-pic-box {
+        display: none;
+    }
+}
+
+/* ログイン後 */
+.pic-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .pic-box {
+        display: none;
+    }
+}
+
+.pic {
+    position: relative;
+    right: 0;
+    width: auto;
+    height: 100vh;
+    border-radius: 20px 0 0 20px;
+}
+
+/* 影 */
+.main-shadow {
+    box-shadow: 1px 2px 5px 0 rgba(21, 56, 0, 0.50);
+}
+.menu-shadow {
+    box-shadow: 1px 1px 3px 0 rgba(21, 56, 0, 0.50);
+}
+
+/* 幅調整 */
+.W-10{
+    width: 10%;
+}
+
+.W-20{
+    width: 20%;
+}
+
+.W-30{
+    width: 30%;
+}
+
+.W-40{
+    width: 40%;
+}
+
+.W-50{
+    width: 50%;
+}
+
+.W-60{
+    width: 60%;
+}
+
+.W-70{
+    width: 70%;
+}
+
+.W-80{
+    width: 80%;
+}
+
+.W-90{
+    width: 90%;
+}
+
+.W-96{
+    width: 100%;
+}
+
+.W-100{
+    width: 100%;
+}
+
+.HW-100{
+    width: 100%;
+    height: 100%;
+}
+
+/*　文字　*/
+.txt-user-M {
+    color: var(--color-usr-M);
+}
+
+.txt-user-S {
+    color: var(--color-usr-S);
+}
+
+.txt-vet-M {
+    color: var(--color-vet-M);
+}
+
+.txt-vet-S {
+    color: var(--color-vet-S);
+}
+
+.txt-accent-M {
+    color: var(--color-accent-M);
+}
+
+.txt-accent-S {
+    color: var(--color-accent-S);
+}
+
+.txt-gray {
+    color: var(--color-gray-1);
+}
+
+.txt-gray-ex {
+    color: var(--color-gray-2);
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-error {
+    color: var(--color-error);
+}
+
+/* 背景色設定 */
+.bg-menu-user-1 {
+    background-color: var(--color-user-bg-1);
+}
+
+.bg-menu-user-2 {
+    background-color: var(--color-user-bg-2);
+}
+
+.bg-menu-user-3 {
+    background-color: var(--color-user-bg-3);
+}
+
+.bg-menu-vet-1 {
+    background-color: var(--color-vet-bg-1);
+}
+
+.bg-menu-vet-2 {
+    background-color: var(--color-vet-bg-2);
+}
+
+.bg-menu-vet-3 {
+    background-color: var(--color-vet-bg-3);
+}
+
+.bg-main {
+    background-color: var(--color-bg-1);
+}
+
+.bg-content {
+    background-color: var(--color-bg-0);
+}
+
+.bg-message {
+    background-color: var(--color-bg-2);
+}
+
+.bg-pic-ex {
+    background-color: var(--color-gray-3);
+}
+
+.bg-white {
+    background-color: white;
+}
