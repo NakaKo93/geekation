@@ -1,0 +1,22 @@
+dockerのDBに入る
+$ docker exec -it DB bash
+
+mySQLに接続
+$ mysql -u root -p
+Enter password:root-pass
+
+practice DBへ移動
+mysql> use practice;
+
+現在入っているDBを確認
+mysql> SELECT database();
+
+DDLファイル内のsqlを実行
+mysql> source practice-data/DDL/create_table.sql;
+mysql> source practice-data/DDL/import_data.sql;
+
+現在いるDBに存在するテーブルを確認する
+mysql> show tables;
+
+usersテーブルの詳細を確認する
+mysql> describe users;
